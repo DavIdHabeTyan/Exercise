@@ -1,5 +1,5 @@
+/*
 let str = "abc";
-
 let result = str.split("").reverse().join("");
 console.log(result === str)
 
@@ -17,3 +17,17 @@ function checkPalindrome(string){
 }
 
 console.log(checkPalindrome("aaaabbbaaaa"))
+
+ */
+
+/// one loop Palindrome
+
+function isPalindrome(str1) {
+   let string = "";
+   for(let i = str1.length - 1; i >= 0; i--){
+      string +=str1[i];
+   }
+   return string === str1
+}
+console.log(isPalindrome("madam"));
+
